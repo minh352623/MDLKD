@@ -14,7 +14,6 @@ window.addEventListener("load", function () {
   const heightHeader = header && header.offsetHeight;
   window.addEventListener("scroll", function (e) {
     const scrollY = window.pageYOffset;
-    // console.log(scrollY);
     if (scrollY >= heightHeader) {
       header && header.classList.add("is-fixed");
       document.body.style.paddingTop = `${heightHeader}px`;

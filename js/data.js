@@ -154,7 +154,7 @@ const Rederitem = (item) => {
          <input type="number" value="1"/>
     </div>
     <div class="priceCon">
-      <p class="price-item">${item.price}
+      <p class="price-item">${formatMoney(item.price)}
       </p>
       <span>đ</span>
     </div>
