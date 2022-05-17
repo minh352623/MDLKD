@@ -5,7 +5,7 @@
 .main h1{
     font-size: 40px;
     line-height: 1.2;
-    padding-bottom: 30px;
+    padding-bottom: 10px;
     text-align: center;
 }
 
@@ -15,9 +15,6 @@
     text-align: center;
 }
 
-.main .number{
-    padding-bottom: 20px;
-}
 .contact{
     display: flex;
     justify-content: center;
@@ -25,25 +22,57 @@
 
 .contact td{
     padding-bottom: 10px;
+    padding-left: 10px;
 }
 
 .contact label{
     font-size: 20px;
     font-weight: 600;
+    color: var(--primary-color);
 }
 
 .contact input{
-    width: 300px;
-    height: 30px;
+    width: 400px;
+    height: 50px;
     font-size: 20px;
+    padding: 10px;
 }
 
 .contact .submit{
-    width: 70px;
+    width: 100%;
+    background-color: #000;
+    border-radius: 5px;
+    color: #fff;
 }
 
 .contact .submit:hover{
     cursor: pointer;
-    background-color: #7575;
+    border: none;
+    background-color: var(--primary-color);
+    transition: all 0.3s;
+}
+
+.table{
+    display: flex;
+    justify-content: center;
+}
+
+.table td{
+    width: 440px;
+    text-align: center;
+    line-height: 1.5;
+    /* border: 1px solid rgb(250, 155, 14); */
+}
+
+.table i{
+    padding-top: 15px;
+    font-size: 45px;
+    color: var(--primary-color);
+
+}
+
+.table h3{
+    color: var(--primary-color);
+    font-size: 25px;
 }
 
