@@ -2,7 +2,7 @@ $(document).ready(function () {
   $(".slider-images").slick({
     //lập vô hạn
     infinite: true,
-    //hiện ra 3 ảnh
+    //hiện ra 1 ảnh
     slidesToShow: 1,
     //mỗi lần scoll hiện ra 1 ảnh
     slidesToScroll: 1,

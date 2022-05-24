@@ -150,10 +150,11 @@ const Rederitem = (item) => {
     <div class="product-bot">
     <h3 class="itemTitle">${item.name}</h3>
     <div class="number-cart">
-        <span>số lượng:</span>
+        <span>Số lượng:</span>
          <input type="number" value="1"/>
     </div>
     <div class="priceCon">
+    <span>Giá: </span>
       <p class="price-item">${item.price}
       </p>
       <span>đ</span>
@@ -204,6 +205,7 @@ function removeVietnameseTones(str) {
   return str;
 }
 function formatMoney(num) {
+  //Hàm tạo cho các đối tượng cho phép định dạng số nhạy cảm với ngôn ngữ.
   return Intl.NumberFormat("vi-VN").format(num);
 }
 export { formatMoney };

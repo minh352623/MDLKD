@@ -17,12 +17,12 @@ window.addEventListener("load", function () {
     e.preventDefault();
     let arrSearch = [];
 
-    let valueSearch = this.querySelector(".search").value.toLowerCase();
+    let valueSearch = this.querySelector(".search").value.toLowerCase().trim();
     valueSearch = removeVietnameseTones(valueSearch);
     if (items.length > 0) {
       items.forEach((item) => {
-        let value = item.name;
-        value = removeVietnameseTones(value.toLowerCase());
+        let value = item.name.trim().toLowerCase();
+        value = removeVietnameseTones(value);
         if (value.indexOf(valueSearch) > -1) {
           arrSearch.push(item);
         }

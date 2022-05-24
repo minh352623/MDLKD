@@ -16,7 +16,6 @@ window.addEventListener("load", function () {
   const heightHeader = header && header.offsetHeight;
   window.addEventListener("scroll", function (e) {
     const scrollY = window.pageYOffset;
-    // console.log(scrollY);
     if (scrollY >= heightHeader) {
       header && header.classList.add("is-fixed");
       document.body.style.paddingTop = `${heightHeader}px`;
@@ -43,13 +42,17 @@ window.addEventListener("load", function () {
     //       : [];
     //   console.log("thay doi");
     // };
-    console.log(e.target);
+    // console.log(e.target);
+    //info detail
     if (e.target.matches(".product-image img")) {
       let id = this.querySelector(".product-item").dataset.id;
       detail.push(id);
       window.localStorage.setItem("detail", JSON.stringify(detail));
       window.location.href = "./detail.html";
     }
+    //end info detail
+
+    //and cart
     listItem = JSON.parse(localStorage.getItem("listItem")) || [];
     // console.log(listItem);
     if (
@@ -88,8 +91,6 @@ window.addEventListener("load", function () {
     cartItems[i]?.addEventListener("click", addCart);
     cartItems[i]?.addEventListener("click", showCart);
     cartItems[i]?.addEventListener("click", handleSumMoney);
-
-    // showcart();
   }
 
   // modal cart
@@ -101,6 +102,7 @@ window.addEventListener("load", function () {
   modalTop?.addEventListener("click", function () {
     modalCart.classList.remove("active-modal");
   });
+  //end modal cart
 
   function renderItemModal(item) {
     const main = document.createElement("div");
@@ -119,14 +121,14 @@ window.addEventListener("load", function () {
     const p5 = document.createElement("p");
     p5.textContent = "Xóa";
     p5.className = "modal-clear";
-    main.append(image, p, p2, p3, p4, p5);
-    modalMain.append(main);
+    main?.append(image, p, p2, p3, p4, p5);
+    modalMain?.append(main);
   }
 
   function showCart() {
     listItem = JSON.parse(localStorage.getItem("listItem")) || [];
     // console.log(listItem);
-    modalMain.innerHTML = "";
+    modalMain ? (modalMain.innerHTML = "") : null;
     // console.log(listItem);\
     if (Array.isArray(listItem) && listItem.length > 0) {
       listItem.forEach((item, index) => renderItemModal(item));
@@ -143,18 +145,18 @@ window.addEventListener("load", function () {
         sum += item.number * item.price;
         numberCart += item.number;
       });
-      sumMoney.textContent = formatMoney(sum) + "đ";
-      numberoption.textContent = numberCart;
+      sumMoney ? (sumMoney.textContent = formatMoney(sum) + "đ") : null;
+      numberoption ? (numberoption.textContent = numberCart) : null;
     } else {
-      sumMoney.textContent = "0";
-      numberoption.textContent = "0";
+      sumMoney ? (sumMoney.textContent = "0") : null;
+      numberoption ? (numberoption.textContent = "0") : null;
     }
   }
   handleSumMoney();
   showCart();
 
   //remove itemcart
-  modalMain.addEventListener("click", function (e) {
+  modalMain?.addEventListener("click", function (e) {
     if (e.target.matches(".modal-clear")) {
       console.log(e.target.parentElement);
       const item = e.target.parentElement;
@@ -173,7 +175,7 @@ window.addEventListener("load", function () {
   // console.log(listItem);
 
   //===============Logout====================
-  logout.addEventListener("click", function (e) {
+  logout?.addEventListener("click", function (e) {
     e.preventDefault();
     localStorage.removeItem("User");
     window.location.href = "./index.html";
@@ -191,15 +193,18 @@ function getLocale(key) {
 }
 
 var user = getLocale("User");
+if (user) {
+  var textLogin = `
+                <div class="header-login">
+                    <a href="./profile.html" >Chào <span class="user"> ${
+                      user.username || ""
+                    } </span> | <a href="#" id="logout">Thoát</a></a>
+                </div>`;
+}
 
-var textLogin = `
-              <div class="header-login">
-                  <a href="./profile.html" >Chào <span class="user"> ${user.username} </span> | <a href="#" id="logout">Thoát</a></a>
-              </div>`;
+login ? (login.innerHTML = "") : null;
 
-login.innerHTML = "";
-
-if (user.username) {
+if (user?.username) {
   login.innerHTML = textLogin;
   headerSign.innerHTML = "";
 }
