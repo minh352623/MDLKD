@@ -1,347 +1,386 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bài viết</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./assets/css/baiviet.css" />
+    <link rel="stylesheet" href="./assets/css/base.css" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Bài viết</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-    integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-    integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="./assets/css/baiviet.css" />
-  <link rel="stylesheet" href="./assets/css/base.css" />
+    <link rel="stylesheet" href="./assets/css/grid.css" />
 
-  <link rel="stylesheet" href="./assets/css/grid.css" />
+    <link rel="stylesheet" href="./assets/css/thanhtoan.css" />
 
-  <link rel="stylesheet" href="./assets/css/thanhtoan.css" />
+    <link rel="stylesheet" href="./assets/css/trangchu.css" />
 
-  <link rel="stylesheet" href="./assets/css/trangchu.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <title>Bài viết</title>
+  </head>
 
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
-  <title>Bài viết</title>
-</head>
-
-<body>
-  <div class="app">
-    <!-- HEADER  -->
-    <header class="header">
-      <div class="header-top">
-        <div class="header-logo">
-          <a href="index.html">
-            <img src="./assets/images/trangchu/logo-header.jpg" alt="" class="header-logo__img" />
-          </a>
-        </div>
-        <div class="header-navbar">
-          <ul class="navbar-list">
-            <li class="navbar-item">
-              <a href="index.html" class="header-item__link">Trang Chủ</a>
-            </li>
-            <li class="navbar-item item-option">
-              <a href="index.html" class="header-item__link">Cửa Hàng
-                <i class="icon-arrow fa fa-angle-down"></i>
-              </a>
-              <div class="shop-option">
-                <ul class="shop-list">
-                  <li class="shop-item">
-                    <a href="./product.html" class="shop-link">Sản phẩm</a>
-                  </li>
-                  <li class="shop-item">
-                    <a href="./thanhtoan.html" class="shop-link">Thủ Tục Thanh Toán</a>
-                  </li>
-                </ul>
+  <body>
+    <div class="app">
+      <!-- HEADER  -->
+      <header class="header">
+        <div class="header-top">
+          <div class="header-logo">
+            <a href="index.html">
+              <img
+                src="./assets/images/trangchu/logo-header.jpg"
+                alt=""
+                class="header-logo__img"
+              />
+            </a>
+          </div>
+          <div class="header-navbar">
+            <ul class="navbar-list">
+              <li class="navbar-item">
+                <a href="index.html" class="header-item__link">Trang Chủ</a>
+              </li>
+              <li class="navbar-item item-option">
+                <a href="index.html" class="header-item__link"
+                  >Cửa Hàng
+                  <i class="icon-arrow fa fa-angle-down"></i>
+                </a>
+                <div class="shop-option">
+                  <ul class="shop-list">
+                    <li class="shop-item">
+                      <a href="./product.html" class="shop-link">Sản phẩm</a>
+                    </li>
+                    <li class="shop-item">
+                      <a href="./thanhtoan.html" class="shop-link"
+                        >Thủ Tục Thanh Toán</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="navbar-item item-option-2">
+                <a href="index.html" class="header-item__link"
+                  >Trang
+                  <i class="icon-arrow fa fa-angle-down"></i>
+                </a>
+                <div class="shop-option-2">
+                  <ul class="shop-list">
+                    <li class="shop-item">
+                      <a href="./about.html" class="shop-link">Về Chúng Tôi</a>
+                    </li>
+                    <li class="shop-item">
+                      <a href="#" class="shop-link">Liên Hệ</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="navbar-item">
+                <a href="./baiviet.html" class="header-item__link">Bài Viết</a>
+              </li>
+              <li class="navbar-item">
+                <a href="./contact.html" class="header-item__link">Liên Hệ</a>
+              </li>
+            </ul>
+          </div>
+          <div class="header-interactive">
+            <div class="header-sign">
+              <div class="header-login">
+                <i class="fas fa-user"></i>
+                <span><a href="./login.html">Đăng nhập</a></span>
               </div>
-            </li>
-            <li class="navbar-item item-option-2">
-              <a href="index.html" class="header-item__link">Trang
-                <i class="icon-arrow fa fa-angle-down"></i>
-              </a>
-              <div class="shop-option-2">
-                <ul class="shop-list">
-                  <li class="shop-item">
-                    <a href="./about.html" class="shop-link">Về Chúng Tôi</a>
-                  </li>
-                  <li class="shop-item">
-                    <a href="#" class="shop-link">Liên Hệ</a>
-                  </li>
-                  <li class="shop-item">
-                    <a href="#" class="shop-link">Danh Sách Yêu Thích</a>
-                  </li>
-                  <li class="shop-item">
-                    <a href="#" class="shop-link">Tài Khoản Của Tôi</a>
-                  </li>
-                </ul>
+              <span class="seperate">/</span>
+              <div class="header-registration">
+                <span><a href="./register.html">Đăng kí</a></span>
               </div>
-            </li>
-            <li class="navbar-item">
-              <a href="./baiviet.html" class="header-item__link">Bài Viết</a>
-            </li>
-            <li class="navbar-item">
-              <a href="./contact.html" class="header-item__link">Liên Hệ</a>
-            </li>
-          </ul>
-        </div>
-        <div class="header-interactive">
-          <div class="header-sign">
-            <div class="header-login">
-              <i class="fas fa-user"></i>
-              <span><a href="./login.html">Đăng nhập</a></span>
             </div>
-            <span class="seperate">/</span>
-            <div class="header-registration">
-              <span><a href="./register.html">Đăng kí</a></span>
+            <div class="header-option">
+              <div class="header-heart">
+                <i class="fas fa-heart"></i>
+                <span class="number-option number-option-heart">0</span>
+              </div>
+              <div class="header-cart">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="number-option number-option-cart">0</span>
+              </div>
+              <div class="header-search">
+                <i class="fas fa-search"></i>
+              </div>
             </div>
           </div>
-          <div class="header-option">
-            <div class="header-heart">
-              <i class="fas fa-heart"></i>
-              <span class="number-option number-option-heart">0</span>
+        </div>
+      </header>
+
+      <div class="main">
+        <!-- BLOG -->
+        <section class="blog">
+          <div class="blog-heading">
+            <h1><b>Tin Tức Mới Nhất</b></h1>
+            <span>Mẹo hay cho phái đẹp</span>
+          </div>
+          <div id="card" class="row"></div>
+        </section>
+        <div id="card" class="row">
+          <div class="col-md-4">
+            <img
+              class="card-img-top flash"
+              src="./assets/images/blog/blog10.webp"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <p><b class="text-warning"> Ngày 1 tháng 5, 2022</b></p>
+              <p>
+                <b class="card-title"
+                  ><a href="product.html">Quà cho những gói nhỏ niềm vui</a></b
+                >
+              </p>
+              <p class="text">
+                Bản thân nỗi đau là quan trọng, nhưng nỗi đau được tăng cường
+                bởi quá trình tạo mỡ, nhưng tôi cho nó thời gian để cắt giảm nó
+                để tôi làm một số công việc lớn và đau đớn. ...
+              </p>
+              <a href="product.html"
+                ><button class="read-more-btn border border m-2">
+                  Read more
+                </button></a
+              >
             </div>
-            <div class="header-cart">
-              <i class="fas fa-shopping-cart"></i>
-              <span class="number-option number-option-cart">0</span>
+          </div>
+
+          <div class="col-md-4">
+            <img
+              class="card-img-top flash"
+              src="./assets/images/blog/blog11.webp"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <p><b class="text-warning">Ngày 1 tháng 5, 2022</b></p>
+              <p>
+                <b class="card-title"
+                  ><a href="product.html">Giữ ấm cho trẻ sau khi tắm ...</a></b
+                >
+              </p>
+              <p class="text">
+                Bản thân nỗi đau là quan trọng, nhưng nỗi đau được tăng cường
+                bởi quá trình tạo mỡ, nhưng tôi cho nó thời gian để cắt giảm nó
+                để tôi làm một số công việc lớn và đau đớn. ...
+              </p>
+              <a href="product.html"
+                ><button class="read-more-btn border border m-2">
+                  Read more
+                </button></a
+              >
             </div>
-            <div class="header-search">
-              <i class="fas fa-search"></i>
+          </div>
+
+          <div class="col-md-4">
+            <img
+              class="card-img-top flash"
+              src="./assets/images/blog/blog12.webp"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <p><b class="text-warning">Ngày 1 tháng 5, 2022</b></p>
+              <p>
+                <b class="card-title"
+                  ><a href="product.html"
+                    >Gói quà tặng Tinytots cho sinh nhật</a
+                  ></b
+                >
+              </p>
+              <p class="text">
+                Bản thân nỗi đau là quan trọng, nhưng nỗi đau được tăng cường
+                bởi quá trình tạo mỡ, nhưng tôi cho nó thời gian để cắt giảm nó
+                để tôi làm một số công việc lớn và đau đớn. ...
+              </p>
+              <a href="product.html"
+                ><button class="read-more-btn border border m-2">
+                  Read more
+                </button></a
+              >
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <img
+              class="card-img-top flash"
+              src="./assets/images/blog/blog7.webp"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <p><b class="text-warning">Ngày 1 tháng 5, 2022</b></p>
+              <p>
+                <b class="card-title"
+                  ><a href="product.html"
+                    >Chăn lông thú giả cho trẻ sơ sinh</a
+                  ></b
+                >
+              </p>
+              <p class="text">
+                Bản thân nỗi đau là quan trọng, nhưng nỗi đau được tăng cường
+                bởi quá trình tạo mỡ, nhưng tôi cho nó thời gian để cắt giảm nó
+                để tôi làm một số công việc lớn và đau đớn. ...
+              </p>
+              <a href="product.html"
+                ><button class="read-more-btn border border m-2">
+                  Read more
+                </button></a
+              >
+            </div>
+          </div>
+          <div class="col-md-4">
+            <img
+              class="card-img-top flash"
+              src="./assets/images/blog/blog8.webp"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <p><b class="text-warning">Ngày 1 tháng 5, 2022</b></p>
+              <p>
+                <b class="card-title"
+                  ><a href="product.html"
+                    >Tất cả những điều một em bé cần!</a
+                  ></b
+                >
+              </p>
+              <p class="text">
+                Bản thân nỗi đau là quan trọng, nhưng nỗi đau được tăng cường
+                bởi quá trình tạo mỡ, nhưng tôi cho nó thời gian để cắt giảm nó
+                để tôi làm một số công việc lớn và đau đớn. ...
+              </p>
+              <a href="product.html"
+                ><button class="read-more-btn border border m-2">
+                  Read more
+                </button></a
+              >
+            </div>
+          </div>
+          <div class="col-md-4">
+            <img
+              class="card-img-top flash"
+              src="./assets/images/blog/blog9.webp"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <p><b class="text-warning">Ngày 1 tháng 5, 2022</b></p>
+              <p>
+                <b class="card-title"
+                  ><a href="product.html"
+                    >Bộ quà tặng cho trẻ em cho các dịp</a
+                  ></b
+                >
+              </p>
+              <p class="text">
+                Bản thân nỗi đau là quan trọng, nhưng nỗi đau được tăng cường
+                bởi quá trình tạo mỡ, nhưng tôi cho nó thời gian để cắt giảm nó
+                để tôi làm một số công việc lớn và đau đớn. ...
+              </p>
+              <a href="product.html"
+                ><button class="read-more-btn border border m-2">
+                  Read more
+                </button></a
+              >
             </div>
           </div>
         </div>
       </div>
-
-    </header>
-    <!-- Modal Card-->
-    <div class="modal fade" id="cardModal" tabindex="-1" aria-labelledby="modalCard" aria-hidden="true">
-      <div style="min-width: 800px" class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="modalCard">Giỏ hàng</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            <table class="table">
-              <thead>
-                <tr style="text-align: center">
-                  <th scope="col">Hình ảnh</th>
-                  <th scope="col">Tên sản phẩm</th>
-                  <th scope="col">Số lượng</th>
-                  <th scope="col">Đơn giá</th>
-                  <th scope="col">Thành tiền</th>
-                  <th></th>
-                </tr>
-              </thead>
-              <tbody id="mini-cart-product1"></tbody>
-              <tfoot>
-                <tr class="total text-center">
-                  <td colspan="3"></td>
-                  <td class="fs-5">Tổng tiền</td>
-                  <td class="sub-total fs-5" id="sub-total1"></td>
-                </tr>
-              </tfoot>
-            </table>
-
-            <div class="products-cart">
-              <div class="mini-cart align-items-center">
-                <div class="mini-cart-list">
+      <div class="footer">
+        <div class="footer-container">
+          <div class="footer-top">
+            <div class="row">
+              <div class="col l-3">
+                <div class="footer-images">
+                  <img src="./assets/images/trangchu/logo-footer.png" alt="" />
+                  <div class="footer-icons">
+                    <a href="#">
+                      <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="#">
+                      <i class="fab fa-youtube"></i>
+                    </a>
+                    <a href="#">
+                      <i class="fab fa-twitter"></i>
+                    </a>
+                  </div>
                 </div>
               </div>
-              <div class="modal-footer">
-                <a class="btn btn-light btn-disable">Xem giỏ hàng</a>
-                <a href="checkout.html" type="button" class="btn btn-primary btn-primary">Đặt hàng</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Modal Detail-->
-        <div class="modal fade" id <ul id="mini-cart-product2">
-          </ul>
-        </div>
-
-        <div class="mini-cart-bottom">
-          <div class="total d-flex align-items-center justify-content-between ms-4">
-            <strong> Tổng tiền: </strong>
-
-            <div class="sub-total" id="sub-total2"></div>
-          </div>
-        </div>
-      </div>
-      ="detailModal"
-      tabindex="-1"
-      aria-labelledby="exampleModalLabel"
-      aria-hidden="true"
-      >
-      <div class="modal-dialog modal-dialog-centered" style="max-width: 900px">
-        <div class="modal-content modal-detail" id="modal-detail"></div>
-      </div>
-    </div>
-    <main class="main">
-      <!-- BLOG -->
-      <section class="blog">
-        <div class="blog-heading">
-          <h1><b>Tin Tức Mới Nhất</b></h1>
-          <span>Mẹo hay cho phái đẹp</span>
-        </div>
-        <div id="card" class="row"></div>
-      </section>
-      <div id="card" class="row">
-        <div class="col-md-4">
-          <img class="card-img-top flash" src="./assets/images/blog/blog10.webp" alt="Card image cap">
-          <div class="card-body">
-            <p><b class="text-warning"> Ngày 1 tháng 5, 2022</b></p>
-            <p><b class="card-title"><a href="product.html">Quà cho những gói nhỏ niềm vui</a></b></p>
-            <p class="text">Bản thân nỗi đau là quan trọng, nhưng nỗi đau được tăng cường bởi quá trình tạo mỡ, nhưng
-              tôi cho nó thời gian để cắt giảm nó để tôi làm một số công việc lớn và đau đớn. ...</p>
-            <a href="product.html"><button class="read-more-btn border border m-2">Read more</button></a>
-          </div>
-        </div>
-
-        <div class="col-md-4">
-          <img class="card-img-top flash" src="./assets/images/blog/blog11.webp" alt="Card image cap">
-          <div class="card-body">
-            <p><b class="text-warning">Ngày 1 tháng 5, 2022</b></p>
-            <p><b class="card-title"><a href="product.html">Giữ ấm cho trẻ sau khi tắm ...</a></b></p>
-            <p class="text">Bản thân nỗi đau là quan trọng, nhưng nỗi đau được tăng cường bởi quá trình tạo mỡ, nhưng
-              tôi cho nó thời gian để cắt giảm nó để tôi làm một số công việc lớn và đau đớn. ...</p>
-            <a href="product.html"><button class="read-more-btn border border m-2">Read more</button></a>
-          </div>
-        </div>
-
-        <div class="col-md-4">
-          <img class="card-img-top flash" src="./assets/images/blog/blog12.webp" alt="Card image cap">
-          <div class="card-body">
-            <p><b class="text-warning">Ngày 1 tháng 5, 2022</b></p>
-            <p><b class="card-title"><a href="product.html">Gói quà tặng Tinytots cho sinh nhật</a></b></p>
-            <p class="text">Bản thân nỗi đau là quan trọng, nhưng nỗi đau được tăng cường bởi quá trình tạo mỡ, nhưng
-              tôi cho nó thời gian để cắt giảm nó để tôi làm một số công việc lớn và đau đớn. ...</p>
-            <a href="product.html"><button class="read-more-btn border border m-2">Read more</button></a>
-          </div>
-        </div>
-
-        <div class="col-md-4">
-          <img class="card-img-top flash" src="./assets/images/blog/blog7.webp" alt="Card image cap">
-          <div class="card-body">
-            <p><b class="text-warning">Ngày 1 tháng 5, 2022</b></p>
-            <p><b class="card-title"><a href="product.html">Chăn lông thú giả cho trẻ sơ sinh</a></b></p>
-            <p class="text">Bản thân nỗi đau là quan trọng, nhưng nỗi đau được tăng cường bởi quá trình tạo mỡ, nhưng
-              tôi cho nó thời gian để cắt giảm nó để tôi làm một số công việc lớn và đau đớn. ...</p>
-            <a href="product.html"><button class="read-more-btn border border m-2">Read more</button></a>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <img class="card-img-top flash" src="./assets/images/blog/blog8.webp" alt="Card image cap">
-          <div class="card-body">
-            <p><b class="text-warning">Ngày 1 tháng 5, 2022</b></p>
-            <p><b class="card-title"><a href="product.html">Tất cả những điều một em bé cần!</a></b></p>
-            <p class="text">Bản thân nỗi đau là quan trọng, nhưng nỗi đau được tăng cường bởi quá trình tạo mỡ, nhưng
-              tôi cho nó thời gian để cắt giảm nó để tôi làm một số công việc lớn và đau đớn. ...</p>
-            <a href="product.html"><button class="read-more-btn border border m-2">Read more</button></a>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <img class="card-img-top flash" src="./assets/images/blog/blog9.webp" alt="Card image cap">
-          <div class="card-body">
-            <p><b class="text-warning">Ngày 1 tháng 5, 2022</b></p>
-            <p><b class="card-title"><a href="product.html">Bộ quà tặng cho trẻ em cho các dịp</a></b></p>
-            <p class="text">Bản thân nỗi đau là quan trọng, nhưng nỗi đau được tăng cường bởi quá trình tạo mỡ, nhưng
-              tôi cho nó thời gian để cắt giảm nó để tôi làm một số công việc lớn và đau đớn. ...</p>
-            <a href="product.html"><button class="read-more-btn border border m-2">Read more</button></a>
-          </div>
-        </div>
-      </div>
-
-  </div>
-
-  </main>
-  <!-- FOOTER -->
-  <div class="footer">
-    <div class="footer-container">
-      <div class="footer-top">
-        <div class="row">
-          <div class="col l-3">
-            <div class="footer-images">
-              <img src="./assets/images/trangchu/logo-footer.png" alt="" />
-              <div class="footer-icons">
-                <a href="#">
-                  <i class="fab fa-facebook"></i>
-                </a>
-                <a href="#">
-                  <i class="fab fa-youtube"></i>
-                </a>
-                <a href="#">
-                  <i class="fab fa-twitter"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="col l-3">
-            <div class="footer-takeCare">
-              <h2>Chăm sóc khách hàng</h2>
-              <ul>
-                <li>Tài khoản của tôi</li>
-                <li>Theo dõi đơn hàng của tôi</li>
-                <li>FAOs</li>
-                <li>Hỗ trợ sản phẩm</li>
-              </ul>
-            </div>
-          </div>
-          <div class="col l-3">
-            <div class="footer-takeCare">
-              <h2>Chăm sóc khách hàng</h2>
-              <ul>
-                <li>Tài khoản của tôi</li>
-                <li>Theo dõi đơn hàng của tôi</li>
-                <li>FAOs</li>
-                <li>Hỗ trợ sản phẩm</li>
-              </ul>
-            </div>
-          </div>
-          <div class="col l-3">
-            <div class="footer-contact">
-              <div class="contact-top">
-                <h2>Liên Hệ</h2>
-                <div class="contact-phone">
-                  <i class="fas fa-phone"></i>
-                  <p class="info">(+84)012345678</p>
+              <div class="col l-3">
+                <div class="footer-takeCare">
+                  <h2>Chăm sóc khách hàng</h2>
+                  <ul>
+                    <li>Tài khoản của tôi</li>
+                    <li>Theo dõi đơn hàng của tôi</li>
+                    <li>FAOs</li>
+                    <li>Hỗ trợ sản phẩm</li>
+                  </ul>
                 </div>
-                <p>nhom04_CT188</p>
               </div>
-              <div class="contact-bot">
-                <h2>Địa chỉ</h2>
-                <div class="contact-phone">
-                  <i class="fas fa-map-marker-alt"></i>
-                  <p class="info">Đường 3/2</p>
+              <div class="col l-3">
+                <div class="footer-takeCare">
+                  <h2>Chăm sóc khách hàng</h2>
+                  <ul>
+                    <li>Tài khoản của tôi</li>
+                    <li>Theo dõi đơn hàng của tôi</li>
+                    <li>FAOs</li>
+                    <li>Hỗ trợ sản phẩm</li>
+                  </ul>
                 </div>
-                <p>Q.Ninh Kiều, Tp.Cần Thơ</p>
               </div>
+              <div class="col l-3">
+                <div class="footer-contact">
+                  <div class="contact-top">
+                    <h2>Liên Hệ</h2>
+                    <div class="contact-phone">
+                      <i class="fas fa-phone"></i>
+                      <p class="info">(+84)012345678</p>
+                    </div>
+                    <p>nhom04_CT188</p>
+                  </div>
+                  <div class="contact-bot">
+                    <h2>Địa chỉ</h2>
+                    <div class="contact-phone">
+                      <i class="fas fa-map-marker-alt"></i>
+                      <p class="info">Đường 3/2</p>
+                    </div>
+                    <p>Q.Ninh Kiều, Tp.Cần Thơ</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer-bot">
+            <div class="footer-bot__left">
+              <span
+                >Copyright © <span class="left-span">Rubix</span> all rights
+                reserved.</span
+              >
+            </div>
+            <div class="footer-bot__right">
+              <img src="./assets/images/trangchu/footer-contact.png" alt="" />
             </div>
           </div>
         </div>
       </div>
-      <div class="footer-bot">
-        <div class="footer-bot__left">
-          <span>Copyright © <span class="left-span">Rubix</span> all rights
-            reserved.</span>
-        </div>
-        <div class="footer-bot__right">
-          <img src="./assets/images/trangchu/footer-contact.png" alt="" />
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="modal-cart">
-    <div class="modal-container">
-      <div class="modal-top">
-        <h2 class="modal-title">Giỏ Hàng</h2>
-        <i class="modal-close fas fa-times"></i>
-        <div class="row my-3">
-          <div class="col" style="display: flex; align-items: center">
-            <p class="text-secondary mb-0">
-              Copyright &copy; <a href="#" class="text-white">M&B</a> all rights
-              reserved.
-            </p>
+      <div class="modal-cart">
+        <div class="modal-container">
+          <div class="modal-top">
+            <h2 class="modal-title">Giỏ Hàng</h2>
+            <i class="modal-close fas fa-times"></i>
           </div>
           <div class="model-main">
             <div class="modal-main__top">
@@ -368,11 +407,12 @@
     </div>
 
     <!-- BS5 -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-      crossorigin="anonymous"></script>
+      crossorigin="anonymous"
+    ></script>
     <!-- MAIN JS -->
     <script src="./js/cart.js" type="module"></script>
-</body>
-
+  </body>
 </html>
