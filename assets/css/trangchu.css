@@ -541,6 +541,10 @@
     color: white;
 }
 
+.input-email button:hover {
+    background-color: blue;
+}
+
 /* footer */
 .footer-container {
     padding: 50px 20px 0;
@@ -643,19 +647,22 @@
 .modal-cart {
     background-color: rgba(149, 157, 165, 0.7);
     position: fixed;
-    top: 0;
+    top: -20%;
     left: 0;
     right: 0;
     bottom: 0;
-    display: none;
+    /* display: none; */
+    visibility: hidden;
     z-index: 9999;
     opacity: 0;
-    transition: all 0.25s ease;
+    transition: all 0.5s ease;
 }
 
 .modal-cart.active-modal {
-    display: block;
+    /* display: block; */
     opacity: 1;
+    top: 0px;
+    visibility: visible;
 }
 
 .modal-container {
